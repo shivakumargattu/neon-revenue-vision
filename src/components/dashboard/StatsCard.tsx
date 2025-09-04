@@ -52,11 +52,11 @@ export const StatsCard = ({
         </div>
         
         <div className="space-y-2">
-          <div className="text-3xl font-bold text-foreground">
+          <div className="text-4xl font-extrabold bg-gradient-to-r from-foreground via-primary to-accent bg-clip-text text-transparent">
             {value}
           </div>
           {change && (
-            <div className={cn('text-sm font-medium', getTrendColor())}>
+            <div className={cn('text-sm font-semibold', getTrendColor())}>
               {change}
             </div>
           )}

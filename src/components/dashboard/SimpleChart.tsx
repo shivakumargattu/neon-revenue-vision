@@ -25,14 +25,14 @@ export const SimpleRevenueChart = ({ data }: SimpleChartProps) => {
         {Object.entries(monthlyData).map(([month, revenue], index) => (
           <div key={month} className="space-y-2">
             <div className="flex justify-between text-sm">
-              <span className="text-muted-foreground">{month}</span>
-              <span className="text-primary font-medium">
+              <span className="text-muted-foreground font-medium">{month}</span>
+              <span className="text-primary font-bold text-base bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
                 ₹{revenue.toLocaleString('en-IN')}
               </span>
             </div>
-            <div className="w-full bg-muted/20 rounded-full h-2">
+            <div className="w-full bg-muted/20 rounded-full h-3 shadow-inner">
               <div
-                className="bg-gradient-to-r from-primary to-accent h-2 rounded-full transition-all duration-1000 ease-out"
+                className="bg-gradient-to-r from-primary via-accent to-primary-glow h-3 rounded-full transition-all duration-1000 ease-out shadow-neon animate-glow-pulse"
                 style={{
                   width: `${(revenue / maxRevenue) * 100}%`,
                   animationDelay: `${index * 0.1}s`
@@ -76,9 +76,9 @@ export const SimpleIndustryChart = ({ data }: SimpleChartProps) => {
                 <span className="text-foreground font-medium">{industry}</span>
                 <span className="text-muted-foreground">{percentage}%</span>
               </div>
-              <div className="w-full bg-muted/20 rounded-full h-2">
+              <div className="w-full bg-muted/20 rounded-full h-3 shadow-inner">
                 <div
-                  className={`bg-gradient-to-r ${colors[index % colors.length]} h-2 rounded-full transition-all duration-1000 ease-out`}
+                  className={`bg-gradient-to-r ${colors[index % colors.length]} h-3 rounded-full transition-all duration-1000 ease-out shadow-glow`}
                   style={{
                     width: `${percentage}%`,
                     animationDelay: `${index * 0.1}s`

@@ -62,9 +62,11 @@ export const ClientTable = ({ data }: ClientTableProps) => {
                 </div>
               </div>
               
-              <div className="flex items-center gap-2 text-lg font-bold text-primary group-hover:text-primary-glow transition-colors">
-                <DollarSign className="w-5 h-5" />
-                {formatCurrency(client.amountPaid)}
+              <div className="flex items-center gap-2 text-xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent group-hover:from-primary-glow group-hover:to-accent-glow transition-all duration-300">
+                <DollarSign className="w-6 h-6 text-primary group-hover:text-primary-glow transition-colors" />
+                <span className="bg-gradient-to-r from-primary via-accent to-primary-glow bg-clip-text text-transparent font-extrabold text-2xl">
+                  {formatCurrency(client.amountPaid)}
+                </span>
               </div>
             </div>
           </div>

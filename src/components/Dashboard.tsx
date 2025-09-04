@@ -89,10 +89,10 @@ export const Dashboard = () => {
               <Button 
                 onClick={handleRefresh} 
                 disabled={loading}
-                className="glass-hover bg-primary/20 hover:bg-primary/30"
+                className="bg-primary hover:bg-primary-glow text-primary-foreground font-semibold px-6 py-2 shadow-neon hover:shadow-cyan transition-all duration-300 border border-primary/30"
               >
                 <RefreshCw className={`w-4 h-4 mr-2 ${loading ? 'animate-spin' : ''}`} />
-                Refresh
+                Refresh Data
               </Button>
             </div>
           </div>

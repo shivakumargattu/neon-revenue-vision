@@ -2,41 +2,75 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+/* Futuristic Dashboard Design System - Neon Purple & Glassmorphism 
 All colors MUST be HSL.
 */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Dark futuristic background gradient */
+    --background: 240 10% 3.9%;
+    --foreground: 280 15% 95%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    /* Glassmorphism cards */
+    --card: 260 15% 8%;
+    --card-foreground: 280 15% 95%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 260 15% 8%;
+    --popover-foreground: 280 15% 95%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Neon purple primary */
+    --primary: 270 91% 65%;
+    --primary-foreground: 240 10% 3.9%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Secondary with purple tint */
+    --secondary: 260 15% 15%;
+    --secondary-foreground: 280 15% 85%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Muted with dark theme */
+    --muted: 260 10% 12%;
+    --muted-foreground: 260 5% 65%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Cyan accent for highlights */
+    --accent: 190 95% 65%;
+    --accent-foreground: 240 10% 3.9%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 280 15% 95%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    /* Glass borders and inputs */
+    --border: 260 15% 20%;
+    --input: 260 15% 8%;
+    --ring: 270 91% 65%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
+
+    /* Custom design tokens */
+    --primary-glow: 270 91% 75%;
+    --accent-glow: 190 95% 75%;
+    --success: 150 86% 65%;
+    --warning: 45 93% 65%;
+    
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(260 15% 8%) 0%, hsl(240 10% 3.9%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(260 15% 8% / 0.8) 0%, hsl(260 15% 6% / 0.6) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(270 91% 65%) 0%, hsl(190 95% 65%) 100%);
+    --gradient-surface: linear-gradient(145deg, hsl(260 15% 12% / 0.9) 0%, hsl(260 15% 8% / 0.7) 100%);
+    
+    /* Shadows and glows */
+    --shadow-neon: 0 0 20px hsl(270 91% 65% / 0.3);
+    --shadow-cyan: 0 0 20px hsl(190 95% 65% / 0.3);
+    --shadow-glass: 0 8px 32px hsl(240 10% 3.9% / 0.4);
+    --shadow-elevation: 0 4px 20px hsl(240 10% 3.9% / 0.6);
+    
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-spring: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    
+    /* Glass morphism */
+    --glass-backdrop: blur(12px);
+    --glass-border: 1px solid hsl(260 15% 20% / 0.3);
+    --glass-bg: hsl(260 15% 8% / 0.8);
 
     --sidebar-background: 0 0% 98%;
 
@@ -101,5 +135,71 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+    background: var(--gradient-primary);
+    min-height: 100vh;
+  }
+}
+
+@layer components {
+  /* Glassmorphism utility classes */
+  .glass-card {
+    background: var(--glass-bg);
+    backdrop-filter: var(--glass-backdrop);
+    border: var(--glass-border);
+    box-shadow: var(--shadow-glass);
+  }
+  
+  .glass-surface {
+    background: var(--gradient-surface);
+    backdrop-filter: var(--glass-backdrop);
+    border: var(--glass-border);
+  }
+  
+  /* Glow effects */
+  .glow-neon {
+    box-shadow: var(--shadow-neon);
+  }
+  
+  .glow-cyan {
+    box-shadow: var(--shadow-cyan);
+  }
+  
+  /* Smooth transitions */
+  .transition-smooth {
+    transition: var(--transition-smooth);
+  }
+  
+  .transition-spring {
+    transition: var(--transition-spring);
+  }
+  
+  /* Hover effects for glass cards */
+  .glass-hover {
+    transition: var(--transition-smooth);
+  }
+  
+  .glass-hover:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-elevation), var(--shadow-neon);
+    border-color: hsl(var(--primary) / 0.4);
+  }
+  
+  /* Custom scrollbar */
+  .custom-scroll::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  .custom-scroll::-webkit-scrollbar-track {
+    background: hsl(var(--muted));
+    border-radius: 3px;
+  }
+  
+  .custom-scroll::-webkit-scrollbar-thumb {
+    background: hsl(var(--primary) / 0.6);
+    border-radius: 3px;
+  }
+  
+  .custom-scroll::-webkit-scrollbar-thumb:hover {
+    background: hsl(var(--primary));
   }
 }

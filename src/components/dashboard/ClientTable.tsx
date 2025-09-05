@@ -28,7 +28,7 @@ export const ClientTable = ({ data }: ClientTableProps) => {
   return (
     <Card className="glass-card p-6 col-span-3 animate-slide-in-up">
       <div className="flex items-center justify-between mb-6">
-        <h3 className="text-xl font-bold text-foreground">Top Clients</h3>
+        <h3 className="text-xl font-bold text-foreground">Clients & Payments</h3>
         <div className="text-sm text-muted-foreground">
           {data.length} total clients
         </div>

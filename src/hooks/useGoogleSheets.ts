@@ -33,7 +33,7 @@ export const useGoogleSheets = (csvUrl: string, refreshInterval = 30000) => {
           // Normalize headers to match our interface
           const normalized = header.toLowerCase().trim();
           if (normalized.includes('client')) return 'client';
-          if (normalized.includes('amount') || normalized.includes('paid') || normalized.includes('revenue')) return 'amountPaid';
+          if (normalized.includes('amount') || normalized.includes('paid') || normalized.includes('revenue') || normalized.includes('apid')) return 'amountPaid';
           if (normalized.includes('industry')) return 'industry';
           if (normalized.includes('gmail') || normalized.includes('email')) return 'gmail';
           return header;

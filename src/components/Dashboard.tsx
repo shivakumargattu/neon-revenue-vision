@@ -73,10 +73,10 @@ export const Dashboard = () => {
           <div className="flex items-center justify-between">
             <div>
               <h1 className="text-3xl font-bold bg-gradient-hero bg-clip-text text-transparent">
-                Business Analytics Dashboard
+                Service Payments Dashboard
               </h1>
               <p className="text-muted-foreground mt-1">
-                Real-time insights from your business data
+                Track payments received from clients for services provided
               </p>
             </div>
             
@@ -114,17 +114,17 @@ export const Dashboard = () => {
           {/* KPI Cards */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             <StatsCard
-              title="Total Revenue"
+              title="Total Payments Received"
               value={formatCurrency(analytics.totalRevenue)}
-              change="+12.5% vs last month"
+              change="From all clients"
               trend="up"
               icon={<DollarSign className="w-6 h-6" />}
               className="animate-fade-in-scale"
             />
             <StatsCard
-              title="Total Clients"
+              title="Paying Clients"
               value={analytics.totalClients}
-              change="+3 new this week"
+              change="Active service clients"
               trend="up"
               icon={<Users className="w-6 h-6" />}
               className="animate-fade-in-scale"
@@ -140,9 +140,9 @@ export const Dashboard = () => {
               style={{ animationDelay: '0.2s' }}
             />
             <StatsCard
-              title="Avg Revenue/Client"
+              title="Avg Payment/Client"
               value={formatCurrency(analytics.avgRevenuePerClient)}
-              change="+8.2% efficiency"
+              change="Service value per client"
               trend="up"
               icon={<Target className="w-6 h-6" />}
               className="animate-fade-in-scale"

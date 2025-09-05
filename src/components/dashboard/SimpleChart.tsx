@@ -18,7 +18,7 @@ export const SimpleRevenueChart = ({ data }: SimpleChartProps) => {
   return (
     <Card className="glass-card glass-hover p-6 col-span-2 animate-slide-in-up">
       <div className="flex items-center justify-between mb-6">
-        <h3 className="text-xl font-bold text-foreground">Revenue Trends</h3>
+        <h3 className="text-xl font-bold text-foreground">Payment Trends</h3>
       </div>
 
       <div className="space-y-4">

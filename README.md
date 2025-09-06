@@ -1,12 +1,15 @@
 
 # AI-Powered Futuristic Business Dashboard 🚀
 
-
 ## 📌 Project Overview
 We built a **futuristic business dashboard** that connects directly to **Google Sheets** for real-time analytics and KPIs.  
 The system automatically updates client revenue and data using an **AI Agent powered by OpenAI**.  
 
 **URL**: https://lovable.dev/projects/ae567c16-fe6b-4f22-b496-db438c5acedf
+
+<img width="1870" height="878" alt="image" src="https://github.com/user-attachments/assets/ab32a86c-101e-43e9-876b-1569e2029502" />
+
+<img width="1685" height="864" alt="image" src="https://github.com/user-attachments/assets/cc97ef5c-0957-4e51-892e-d829830ac5bc" />
 
 We also integrated **Telegram bots** and **email notifications** for automated client communication and payment confirmations.  
 Using **n8n workflows**, data flows seamlessly between Sheets, the dashboard, Telegram, and email – creating a high-tech, automated business assistant.  

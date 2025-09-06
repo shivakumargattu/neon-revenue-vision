@@ -1,73 +1,67 @@
-# Welcome to your Lovable project
 
-## Project info
+# AI-Powered Futuristic Business Dashboard 🚀
+
+
+## 📌 Project Overview
+We built a **futuristic business dashboard** that connects directly to **Google Sheets** for real-time analytics and KPIs.  
+The system automatically updates client revenue and data using an **AI Agent powered by OpenAI**.  
 
 **URL**: https://lovable.dev/projects/ae567c16-fe6b-4f22-b496-db438c5acedf
 
-## How can I edit this code?
+We also integrated **Telegram bots** and **email notifications** for automated client communication and payment confirmations.  
+Using **n8n workflows**, data flows seamlessly between Sheets, the dashboard, Telegram, and email – creating a high-tech, automated business assistant.  
 
-There are several ways of editing your application.
+---
 
-**Use Lovable**
+## 🛠️ Tech Stack
+- **Frontend/UI:** [Lovable](https://lovable.dev) (Purple/Black futuristic design with neon accents, gradients, glassmorphism, animations)  
+- **Backend/Data:** Google Sheets (CSV export link)  
+- **Automation:** [n8n](https://n8n.io) (workflow automation engine)  
+- **AI Agent:** OpenAI API (natural language → structured data updates)  
+- **Communication:** Telegram Bot + Email Notifications  
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/ae567c16-fe6b-4f22-b496-db438c5acedf) and start prompting.
+---
 
-Changes made via Lovable will be committed automatically to this repo.
+## 🎯 Features
+- 📊 Real-time KPI Dashboard (Revenue, Clients, Industry, Engagement)  
+- 🤖 AI Agent to manage Google Sheet updates automatically  
+- 💬 Telegram Bot integration for instant notifications  
+- 📧 Automated email updates for payment confirmations  
+- 🔄 Seamless automation with n8n workflows  
+- 🎨 Futuristic Lovable UI with glassmorphism & neon effects  
 
-**Use your preferred IDE**
+---
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 🤖 Use of OpenAI API
+OpenAI acts as an **AI Sheet Manager** that:  
+- Interprets natural language requests (e.g., *“Update client revenue in the sheet”*)  
+- Converts requests into structured actions  
+- Automatically updates Google Sheets without manual work  
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+---
 
-Follow these steps:
+## ⚡ Impact
+- Saves businesses significant **manual effort**  
+- Improves **client communication** through instant updates  
+- Provides **real-time revenue visibility**  
+- Feels **dynamic, futuristic, and scalable** for modern businesses  
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+---
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## 📂 Project Files
+- **[AI_Business_Dashboard_Project.pdf](AI_Business_Dashboard_Project.pdf)** → Detailed Project Report  
+- **README.md** → GitHub project overview  
 
-# Step 3: Install the necessary dependencies.
-npm i
+---
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+## 🚀 How to Run
+1. Clone this repository  
+2. Import the **n8n workflow JSON**  
+3. Add your **Google Sheets link**, **Telegram bot token**, and **email service credentials**  
+4. Run the dashboard frontend (Lovable)  
+5. Enjoy your futuristic AI-powered dashboard 🎉  
 
-**Edit a file directly in GitHub**
+---
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/ae567c16-fe6b-4f22-b496-db438c5acedf) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+## 👨‍💻 Author
+Built with ❤️ using Lovable, OpenAI, Google Sheets, Telegram, Email, and n8n.  
